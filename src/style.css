@@ -1,0 +1,137 @@
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --black-accent: rgb(5, 5, 5);
+  --off-white: rgb(90, 90, 90);
+}
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  margin: 0;
+}
+/* --------------home page---------- */
+
+.home-page .hero {
+  background: var(--black-accent);
+  color: rgb(186, 186, 186);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 2rem;
+}
+.hero h1 {
+  margin: 0;
+  padding: 0;
+  width: max-content;
+  font-size: 6rem;
+  font-weight: lighter;
+}
+
+.fork {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  position: absolute;
+  gap: 0.5rem;
+  text-align: center;
+  top: 1rem;
+  right: 1rem;
+  color: whitesmoke;
+  border: 1px solid var(--off-white);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.m-1 {
+  margin: 0.5rem;
+}
+
+.primary-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  color: var(--black-accent);
+  font-size: large;
+  border-radius: 5px;
+  font-weight: lighter;
+}
+
+.secondary-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid whitesmoke;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: large;
+  color: whitesmoke;
+  font-weight: lighter;
+}
+
+.why-css {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+/* ------------------docs section----------- */
+
+.docs
+{
+
+  margin-left: 300px;
+  width: 100%;
+  height: 100%;
+}
+
+.left-sidebar
+{
+  border: 1px solid black;
+  height: 100vh;
+position: fixed;
+padding-top: 3rem;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 300px;
+
+}
+
+.title
+{
+  top: 0;
+  position: fixed;
+  background-color: blueviolet;
+  width: auto;
+}
+
+
+.main-section
+{
+  height: 100%;
+  border: 1px solid black;
+  margin-left: 300px;
+}
+
+.buttons
+{
+  margin-left: 300px;
+}
+
+
+.avatar-page
+{
+  margin-left: 300px;
+}
