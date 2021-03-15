@@ -11,14 +11,43 @@ html {
 body {
   margin: 0;
   padding: 0;
-
+background-color: rgb(240, 240, 240);
 }
 
+iframe
+{
+  z-index: -1000000;
+  border-radius: 10px;
+}
+
+.container
+{
+  padding-top: 5rem;
+  width: 60%;
+  margin: 0 auto;
+}
 h1,h2,h3,h4,h5,h6
 {
   margin: 0;
 }
 /* --------------home page---------- */
+
+.topnav-ui
+{
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container
+{
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  margin: 1rem 0;
+  
+}
+
+
 
 .home-page .hero {
   background: var(--black-accent);
@@ -39,6 +68,17 @@ h1,h2,h3,h4,h5,h6
   font-weight: lighter;
 }
 
+.docs-page{
+  padding-top: 5rem;
+}
+.docs-title
+{
+  display: grid;
+  place-items: center;
+  height: 80vh;
+  margin-left: 7rem;
+}
+
 .fork {
   display: flex;
   align-items: center;
@@ -46,7 +86,7 @@ h1,h2,h3,h4,h5,h6
   position: absolute;
   gap: 0.5rem;
   text-align: center;
-  top: 1rem;
+  top: 4rem;
   right: 1rem;
   color: whitesmoke;
   border: 1px solid var(--off-white);
@@ -127,7 +167,7 @@ padding-top: 3rem;
 
 .buttons
 {
-  margin-left: 300px;
+ 
 }
 
 

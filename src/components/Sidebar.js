@@ -103,15 +103,20 @@ import Submenu from "./Submenu";
 import { IconContext } from "react-icons/lib";
 const Nav = styled.div`
   background: black;
-  height: 80px;
+  height: 50px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 3rem;
+  z-index: 10000;
 `;
 
 const NavIcon = styled(Link)`
   margin-left: 2rem;
-  height: 80px;
+  height: 50px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -128,9 +133,14 @@ const SidebarNav = styled.nav`
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 250ms;
   z-index: 10;
+  overflow: scroll;
 `;
 const SidebarWrap = styled.div`
   width: 100%;
+`;
+
+const Brand = styled.span`
+  text-align: center;
 `;
 
 const Sidebar = () => {
@@ -141,22 +151,22 @@ const Sidebar = () => {
 
   return (
     <>
-    <IconContext.Provider value = {{color: "red"}}>
-      <Nav>
-        <NavIcon to="#">
-          <FaIcons.FaBars onClick={showSidebar} size={28} />
-        </NavIcon>
-      </Nav>
-      <SidebarNav sidebar={sidebar}>
-        <SidebarWrap>
+      <IconContext.Provider value={{ color: "red" }}>
+        <Nav>
           <NavIcon to="#">
-            <FaIcons.FaTimes onClick={showSidebar} size={28} />
+            <FaIcons.FaBars onClick={showSidebar} size={28} />
           </NavIcon>
-          {SidebarData.map((item, index) => {
-            return <Submenu item={item} key={index} />;
-          })}
-        </SidebarWrap>
-      </SidebarNav>
+        </Nav>
+        <SidebarNav sidebar={sidebar}>
+          <SidebarWrap>
+            <NavIcon to="#">
+              <FaIcons.FaTimes onClick={showSidebar} size={28} />
+            </NavIcon>
+            {SidebarData.map((item, index) => {
+              return <Submenu item={item} key={index} />;
+            })}
+          </SidebarWrap>
+        </SidebarNav>
       </IconContext.Provider>
     </>
   );

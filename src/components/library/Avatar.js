@@ -3,7 +3,7 @@ import React from 'react'
 const Avatar = () => {
     return (
         <div className="avatar-page">
-            I am button
+            I am Avatar
         </div>
     )
 }

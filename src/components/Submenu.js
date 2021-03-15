@@ -3,7 +3,7 @@ import { icons } from "react-icons/lib";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const SidebarLink = styled.div`
+const SidebarLink = styled(Link)`
   display: flex;
   color: white;
   justify-content: flex-start;
@@ -13,7 +13,7 @@ const SidebarLink = styled.div`
   height: 60px;
   font-size 1rem;
   border-left: 4px solid transparent;
-
+text-decoration: none;
   &:hover {
       background: black;
       border-left: 4px solid white;
@@ -39,10 +39,10 @@ transition: 0.3s ease-in-out;
 font-size: 1rem;
 text-decoration: none;
 padding: 1rem;
-
+transition: height 1s;
 &:hover{
 
-    background: black;
+    background: red;
     border-right: 5px solid white;
 
 }
@@ -57,12 +57,12 @@ const Submenu = ({ item }) => {
 
   return (
     <div>
-      <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
+      <SidebarLink to={item.path} >
         <div>
           {item.icon}
           <Sidebarlabel>{item.title}</Sidebarlabel>
         </div>
-        <div style={{ marginLeft: "auto" }}>
+        <div style={{ marginLeft: "auto" }} onClick={item.subNav && showSubnav}>
           {item.subNav && subnav
             ? item.iconOpened
             : item.subNav
