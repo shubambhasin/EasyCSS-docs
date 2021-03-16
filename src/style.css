@@ -29,7 +29,8 @@ body {
 iframe {
   z-index: -1000000;
   border-radius: 10px;
-  margin: 0;
+  margin: 1.5rem 0;
+  
 }
 
 .container {

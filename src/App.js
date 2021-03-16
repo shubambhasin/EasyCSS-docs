@@ -5,6 +5,7 @@ import { HomePage } from "./components/HomePage";
 import Alert from "./components/library/Alert";
 import Avatar from "./components/library/Avatar";
 import { Buttons } from "./components/library/Buttons";
+import Card from "./components/library/Card";
 import Sidebar from "./components/Sidebar";
 import TopNav from "./components/TopNav";
 import "./ease/ease.css"  
@@ -23,6 +24,7 @@ function App() {
           <Route path="/avatar" exact component={Avatar}/>
           <Route path="/alert" exact component={Alert}/>
           <Route path="/buttons" exact component={Buttons}/>
+          <Route path="/card" exact component={Card}/>
           <Route path="/docs" exact component={Docs}/>
         </Switch>
       </>
