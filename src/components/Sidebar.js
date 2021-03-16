@@ -134,6 +134,9 @@ const SidebarNav = styled.nav`
   transition: 250ms;
   z-index: 10;
   overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 const SidebarWrap = styled.div`
   width: 100%;
