@@ -59,15 +59,18 @@ export const SidebarData = [
         icon: "",
         iconClosed: "O",
         iconOpened: "X",
+
         subNav: [
             {
                 title: "Primary",
                 path: "/button/btn-primary",
+                hashlink: "/buttons/#primary-button" ,
                 icon:""
             },
             {
                 title: "Secondary",
                 path: "/button/btn-secondary",
+                hashlink: "/buttons/#secondary-button" ,
                 icon:""
             },
             {

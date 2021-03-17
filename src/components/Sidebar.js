@@ -125,12 +125,13 @@ const NavIcon = styled(Link)`
 const SidebarNav = styled.nav`
   background: black;
   width: 250px;
+  max-width: 350px;
   height: 100vh;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
-  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+  left: ${({ sidebar }) => (sidebar ? "0" : "-350px")};
   transition: 250ms;
   z-index: 10;
   overflow: scroll;
@@ -142,9 +143,9 @@ const SidebarWrap = styled.div`
   width: 100%;
 `;
 
-const Brand = styled.span`
-  text-align: center;
-`;
+// const Brand = styled.span`
+//   text-align: center;
+// `;
 
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);

@@ -14,6 +14,7 @@ export const HomePage = () => {
         <div>
           <HashLink to="/#why" className="secondary-button m-1">
             Why Ease.CSS
+
           </HashLink>
           <Link to="/docs" className="primary-button m-1">
             Docs
@@ -21,7 +22,8 @@ export const HomePage = () => {
         </div>
       </div>
       <div id="why" className="why-css">
-        <h1>Why Section !</h1>
+        <h1>Why Section ! 
+            Hello go</h1>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 export const Buttons = () => {
   return (
-    <div className="buttons container">
+    <div id="primary-button" className="buttons container">
       <div className="btn-main">
         <h1>Buttons</h1>
         <p>
@@ -38,6 +38,7 @@ export const Buttons = () => {
           }}
           sandbox="allow-scripts allow-same-origin"
         ></iframe>
+        <span id="secondary-button"></span>
         <h2>Secondary button</h2>
         <button className="btn btn-sec ">Secondary Button</button>
         <iframe

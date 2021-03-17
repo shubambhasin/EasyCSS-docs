@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { icons } from "react-icons/lib";
+// import { icons } from "react-icons/lib";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 
 const SidebarLink = styled(Link)`
@@ -26,7 +27,7 @@ const Sidebarlabel = styled.span`
   margin-left: 1rem;
 `;
 
-const DropdownLink = styled(Link)`
+const DropdownLink = styled(HashLink)`
 
 border-right: 5px solid transparent;
 background: black;
@@ -57,7 +58,7 @@ const Submenu = ({ item }) => {
 
   return (
     <div>
-      <SidebarLink to={item.path} >
+      <SidebarLink to={item.path}>
         <div>
           {item.icon}
           <Sidebarlabel>{item.title}</Sidebarlabel>
@@ -73,10 +74,12 @@ const Submenu = ({ item }) => {
       {subnav &&
         item.subNav.map((item, index) => {
           return (
-            <DropdownLink to={item.path}>
-              {item.icon}
-              <Sidebarlabel>{item.title}</Sidebarlabel>
-            </DropdownLink>
+
+              <DropdownLink to={item.hashlink}>
+                {item.icon}
+                <Sidebarlabel>{item.title}</Sidebarlabel>
+              </DropdownLink>
+
           );
         })}
     </div>
