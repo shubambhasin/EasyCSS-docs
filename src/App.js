@@ -7,6 +7,7 @@ import Avatar from "./components/library/Avatar";
 import { Buttons } from "./components/library/Buttons";
 import Card from "./components/library/Card";
 import Navigation from "./components/library/Navigation";
+import Ratings from "./components/library/Ratings";
 import Sidebar from "./components/Sidebar";
 // import TopNav from "./components/TopNav";
 import "./ease/ease.css"  
@@ -36,6 +37,7 @@ function App() {
           <Route path="/card" exact component={Card}/>
           <Route path="/docs" exact component={Docs}/>
           <Route path="/navigation" exact component={Navigation}/>
+          <Route path="/ratings" exact component={Ratings}/>
         </Switch>
       </>
     </div>

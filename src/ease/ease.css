@@ -382,10 +382,20 @@ h6 {
   margin: 6em;
 }
 
+.mt1-rem
+{
+  margin-top: 1rem;
+}
+
 .mtb1-rem {
   margin: 1rem 0;
 }
-
+.mtb2-rem {
+  margin: 2rem 0;
+}
+.mtb3-rem {
+  margin: 3rem 0;
+}
 .mb3-rem {
   margin-bottom: 3rem;
 }
