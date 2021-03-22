@@ -20,10 +20,10 @@ a {
   text-decoration: none;
 }
 input {
-  border: 1px solid transparent;
+  border: none;
   outline: none;
   padding: 0.5rem 0.2rem;
-  box-shadow: rgb(155, 155, 155) 0 0 2px 1px;
+  border-radius: 5px;
 }
 .br5px {
   border-radius: 5px;
@@ -111,33 +111,27 @@ p {
 }
 /* ****************avatars***********************/
 
-.inline
-{
+.inline {
   display: inline-block;
 }
-
 
 .avtr {
   width: 100%;
   height: auto;
 }
-.avtr-75pc
-{
+.avtr-75pc {
   width: 75%;
   height: auto;
 }
-.avtr-50pc
-{
+.avtr-50pc {
   width: 50%;
   height: auto;
 }
-.avtr-25pc
-{
+.avtr-25pc {
   width: 25%;
   height: auto;
 }
-.avtr-tiny
-{
+.avtr-tiny {
   width: 10%;
   height: auto;
 }
@@ -158,16 +152,29 @@ p {
 
 /* -------------Input---------------- */
 
-.input
-{
-  outline: none;
+.input {
   border: none;
-  
 }
 
-
-
-
+.input-red {
+  
+  transition: 0.3s;
+}
+.input-red:focus {
+  box-shadow: 0px 0px 1px 2px crimson;
+}
+.input-green {
+  transition: 0.3s;
+}
+.input-green:focus {
+  box-shadow: 0px 0px 1px 2px var(--green);
+}
+.input-blue {
+  transition: 0.3s;
+}
+.input-blue:focus {
+  box-shadow: 0px 0px 1px 2px var(--blue);
+}
 
 /* ************buttons******************** */
 
@@ -966,8 +973,12 @@ p {
 /* -----------Typography----------- */
 .text-utils {
 }
-.h1,.h2,.h3,.h4,.h5,.h6
-{
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-weight: normal;
 }
 .h1 {
