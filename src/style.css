@@ -368,7 +368,25 @@ h6 {
   border-radius: 5px;
 }
 
+/* ------avatar------------0 */
 
+
+.avatar-container
+{
+  border: 1px solid grey;
+  padding: 1rem;
+  width: 300px;
+  height: 100%;
+}
+
+.avatar-container-1
+{
+
+  width: 400px;
+  padding: 1rem 0;
+
+
+}
 /* -----------images--------------- */
 
 .image-container

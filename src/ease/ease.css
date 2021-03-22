@@ -111,8 +111,34 @@ p {
 }
 /* ****************avatars***********************/
 
+.inline
+{
+  display: inline-block;
+}
+
+
 .avtr {
   width: 100%;
+  height: auto;
+}
+.avtr-75pc
+{
+  width: 75%;
+  height: auto;
+}
+.avtr-50pc
+{
+  width: 50%;
+  height: auto;
+}
+.avtr-25pc
+{
+  width: 25%;
+  height: auto;
+}
+.avtr-tiny
+{
+  width: 10%;
   height: auto;
 }
 
@@ -129,6 +155,19 @@ p {
 .avtr-right {
   margin: 0 0 0 auto;
 }
+
+/* -------------Input---------------- */
+
+.input
+{
+  outline: none;
+  border: none;
+  
+}
+
+
+
+
 
 /* ************buttons******************** */
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const Alert = () => {
@@ -72,7 +73,7 @@ const Alert = () => {
 
       <SyntaxHighlighter
         language="css"
-        style={dark}
+        style={dracula}
       >{`<button class="btn btn-green greenToastShow">Green Toast</button>
 <button class="btn btn-red redToastShow">Red Toast</button>
 <button class="btn btn-blue blueToastShow">Blue Toast</button>
@@ -154,7 +155,7 @@ const Alert = () => {
         <p>This one because we all love Black 🖤 ☝</p>
       </div>
 
-      <SyntaxHighlighter language="css" style={dark}>
+      <SyntaxHighlighter language="css" style={dracula}>
         {`<div class="toast-container">
       <div class="toast-green">
         <h1 style="display: inline">Hello Green, this is a toast</h1>
