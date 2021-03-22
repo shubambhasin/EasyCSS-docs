@@ -6,8 +6,10 @@ import Alert from "./components/library/Alert";
 import Avatar from "./components/library/Avatar";
 import { Buttons } from "./components/library/Buttons";
 import Card from "./components/library/Card";
+import Image from "./components/library/Image";
 import Navigation from "./components/library/Navigation";
 import Ratings from "./components/library/Ratings";
+import TextUtils from "./components/library/TextUtils";
 import Sidebar from "./components/Sidebar";
 // import TopNav from "./components/TopNav";
 import "./ease/ease.css"  
@@ -38,6 +40,8 @@ function App() {
           <Route path="/docs" exact component={Docs}/>
           <Route path="/navigation" exact component={Navigation}/>
           <Route path="/ratings" exact component={Ratings}/>
+          <Route path="/images" exact component={Image}/>
+          <Route path="/text-utilities" exact component={TextUtils}/>
         </Switch>
       </>
     </div>

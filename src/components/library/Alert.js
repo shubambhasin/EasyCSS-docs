@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const Alert = () => {
   const [green, showGreen] = useState("false");
@@ -68,15 +70,15 @@ const Alert = () => {
         </button>
       </div>
 
-      <iframe
-        title="code"
-        src={
-          "https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=panda-syntax&wt=none&l=css&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-green%2520greenToastShow%2522%253EGreen%2520Toast%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-red%2520redToastShow%2522%253ERed%2520Toast%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-blue%2520blueToastShow%2522%253EBlue%2520Toast%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-yellow%2520yellowToastShow%2522%253EYellow%2520Toast%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-orange%2520orangeToastShow%2522%253EOrange%2520Toast%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-black%2520blackToastShow%2522%253EBlack%2520Toast%253C%252Fbutton%253E"
-        }
-        style={{ width: "100%", height: "300px", border: "0" }}
-        sandbox="allow-scripts allow-same-origin"
-      ></iframe>
-
+      <SyntaxHighlighter
+        language="css"
+        style={dark}
+      >{`<button class="btn btn-green greenToastShow">Green Toast</button>
+<button class="btn btn-red redToastShow">Red Toast</button>
+<button class="btn btn-blue blueToastShow">Blue Toast</button>
+<button class="btn btn-yellow yellowToastShow">Yellow Toast</button>
+<button class="btn btn-orange orangeToastShow">Orange Toast</button>
+<button class="btn btn-black blackToastShow">Black Toast</button>`}</SyntaxHighlighter>
       <div className="toast-container">
         <div class={`toast-green ${green}`}>
           <h1 style={{ display: "inline" }}>Hello Green, this is a toast</h1>
@@ -152,20 +154,34 @@ const Alert = () => {
         <p>This one because we all love Black 🖤 ☝</p>
       </div>
 
-      <iframe
-        title="code"
-        src={
-          "https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=panda-syntax&wt=none&l=css&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-green%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520style%253D%2522display%253A%2520inline%2522%253EHello%2520Green%252C%2520this%2520is%2520a%2520toast%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520greenToastClose%2522%253Eclose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-red%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520style%253D%2522display%253A%2520inline%2522%253EHello%2520Red%252C%2520this%2520is%2520a%2520toast%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520redToastClose%2522%253Eclose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-blue%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520style%253D%2522display%253A%2520inline%2522%253EHello%2520Blue%252C%2520this%2520is%2520a%2520toast%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520blueToastClose%2522%253Eclose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-yellow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520style%253D%2522display%253A%2520inline%2522%253EHello%2520Yellow%252C%2520this%2520is%2520a%2520toast%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520yellowToastClose%2522%253Eclose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-orange%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520style%253D%2522display%253A%2520inline%2522%253EHello%2520Orange%252C%2520this%2520is%2520a%2520toast%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520orangeToastClose%2522%253Eclose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-black%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%2520style%253D%2522display%253A%2520inline%2522%253EHello%2520Black%252C%2520this%2520is%2520a%2520toast%253C%252Fh1%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520blackToastClose%2522%253Eclose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
-        }
-        style={{
-          width: "100%",
-          height: "400px",
-          border: "0",
-          transform: "scale(1)",
-          overflow: "hidden",
-        }}
-        sandbox="allow-scripts allow-same-origin"
-      ></iframe>
+      <SyntaxHighlighter language="css" style={dark}>
+        {`<div class="toast-container">
+      <div class="toast-green">
+        <h1 style="display: inline">Hello Green, this is a toast</h1>
+        <button class="btn greenToastClose">close</button>
+      </div>
+      <div class="toast-red">
+        <h1 style="display: inline">Hello Red, this is a toast</h1>
+        <button class="btn redToastClose">close</button>
+      </div>
+      <div class="toast-blue">
+        <h1 style="display: inline">Hello Blue, this is a toast</h1>
+        <button class="btn blueToastClose">close</button>
+      </div>
+      <div class="toast-yellow">
+        <h1 style="display: inline">Hello Yellow, this is a toast</h1>
+        <button class="btn yellowToastClose">close</button>
+      </div>
+      <div class="toast-orange">
+        <h1 style="display: inline">Hello Orange, this is a toast</h1>
+        <button class="btn orangeToastClose">close</button>
+      </div>
+      <div class="toast-black">
+        <h1 style="display: inline">Hello Black, this is a toast</h1>
+        <button class="btn blackToastClose">close</button>
+      </div>
+    </div>`}
+      </SyntaxHighlighter>
     </div>
   );
 };

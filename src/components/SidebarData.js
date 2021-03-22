@@ -142,19 +142,19 @@ export const SidebarData = [
     },
     {
         title: "Image",
-        path: "/image",
+        path: "/images",
         icon: "",
         iconClosed: "O",
         iconOpened: "X",
         subNav: [
             {
                 title: "Responsive image",
-                path: "/image/responsive-image",
+                path: "/images/responsive-image",
                 icon:""
             },
             {
                 title: "Round Images",
-                path: "/image/round-images",
+                path: "/images/round-images",
                 icon:""
             },
         ]

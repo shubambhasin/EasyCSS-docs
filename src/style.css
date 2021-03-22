@@ -367,3 +367,26 @@ h6 {
 .b5px {
   border-radius: 5px;
 }
+
+
+/* -----------images--------------- */
+
+.image-container
+{
+  width: 50%;
+  height: auto;
+}
+
+.img-round
+{
+  border-radius: 50%;
+}
+
+
+@media screen and (max-width: 450px)
+{
+  .container
+  {
+    width: 90%;
+  }
+}
