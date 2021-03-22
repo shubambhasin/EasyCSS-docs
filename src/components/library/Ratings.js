@@ -1,10 +1,10 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const Ratings = () => {
   return (
-    <div className="rating container">
+    <div className="rating container anim-fadeIn-03s">
       <h1>Ratings</h1>
       <p>
         We know how important is to give ratings to your Cards/ products etc
@@ -21,7 +21,7 @@ const Ratings = () => {
       
       <SyntaxHighlighter
         language="css"
-        style={dark}
+        style={dracula}
       >{`<div class="star-5"></div>`}</SyntaxHighlighter>
 
       <hr style={{margin: "2rem 0 2rem 0"}}/>
@@ -30,27 +30,27 @@ const Ratings = () => {
       <div className="star-4 mb3-rem"></div>
       <SyntaxHighlighter
         language="css"
-        style={dark}
+        style={dracula}
       >{`<div class="star-4"></div>`}</SyntaxHighlighter>
             <hr style={{margin: "2rem 0 2rem 0"}}/>
       <h3 className="mt1-rem">For 3 ratings</h3>
       <div className="star-3  mb3-rem"></div>
       <SyntaxHighlighter
         language="css"
-        style={dark}
+        style={dracula}
       >{`<div class="star-3"></div>`}</SyntaxHighlighter>
             <hr style={{margin: "2rem 0 2rem 0"}}/>
       <h3 className="mt1-rem">For 2 ratings</h3>
       <div className="star-2  mb3-rem"></div>
       <SyntaxHighlighter
         language="css"
-        style={dark}
+        style={dracula}
       >{`<div class="star-2"></div>`}</SyntaxHighlighter>
             <hr style={{margin: "2rem 0 2rem 0"}}/>
       <h3 className="mt1-rem">For 1 ratings</h3>
       <div className="star-1  mb3-rem"></div>
 
-      <SyntaxHighlighter language="css" style={dark}>
+      <SyntaxHighlighter language="css" style={dracula}>
         {`<div class="star-1"></div>`}
       </SyntaxHighlighter>
     </div>

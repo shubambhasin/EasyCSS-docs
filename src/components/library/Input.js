@@ -4,7 +4,7 @@ import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const Input = () => {
   return (
-    <div className="input-page container">
+    <div className="input-page container anim-fadeIn-03s">
       <h1>Inputs</h1>
       <p>Note: Inputs by default have outline ,border as none.</p>
 

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const Alert = () => {
   const [green, showGreen] = useState("false");
@@ -46,7 +45,7 @@ const Alert = () => {
   };
 
   return (
-    <div className="toast container">
+    <div className="toast container anim-fadeIn-03s">
       <h1>Toast / Notifiers / Alerts</h1>
       <small>Call them how you like them 😊</small>
 

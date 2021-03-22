@@ -1,15 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navigation = () => {
     return (
-        <div className="navigation container">
+        <div className="navigation container anim-fadeIn-03s">
 
 <div className="nav">
       <div className="nav-links-container">
-        <a href="#" className="nav-links">Home</a>
-        <a href="#" className="nav-links">Link1</a>
-        <a href="#" className="nav-links">Link2</a>
-        <a href="#" className="nav-links">Link3</a>
+        <Link href="#" className="nav-links">Home</Link>
+        <Link href="#" className="nav-links">Link1</Link>
+        <Link href="#" className="nav-links">Link2</Link>
+        <Link href="#" className="nav-links">Link3</Link>
       </div>
       <div className="nav-links-container">
         <input type="text" className="br5px" />

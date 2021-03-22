@@ -1,11 +1,10 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const Avatar = () => {
   return (
-    <div className="avatar container">
+    <div className="avatar container anim-fadeIn-03s">
       <h1 className="h1">Avatar</h1>
 
       <h4 className="h4 mtb1-rem">

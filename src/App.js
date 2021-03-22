@@ -6,6 +6,7 @@ import Alert from "./components/library/Alert";
 import Avatar from "./components/library/Avatar";
 import { Buttons } from "./components/library/Buttons";
 import Card from "./components/library/Card";
+import Grid from "./components/library/Grid";
 import Image from "./components/library/Image";
 import Input from "./components/library/Input";
 import Navigation from "./components/library/Navigation";
@@ -43,8 +44,9 @@ function App() {
           <Route path="/ratings" exact component={Ratings}/>
           <Route path="/images" exact component={Image}/>
           <Route path="/text-utilities" exact component={TextUtils}/>
-
           <Route path="/input" exact component={Input}/>
+          <Route path="/simplified-grids" exact component={Grid}/>
+
         </Switch>
       </>
     </div>

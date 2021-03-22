@@ -7,7 +7,7 @@ export const HomePage = () => {
   return (
     <div className="home-page">
       <div className="hero">
-        <div className="fork">
+        <div className="fork pointer">
           <FaStar size={14} /> Star on github
         </div>
         <h1>Ease.CSS</h1>

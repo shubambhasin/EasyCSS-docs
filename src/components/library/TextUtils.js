@@ -1,12 +1,10 @@
 import React from "react";
 import { PrismAsync as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vs } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const TextUtils = () => {
   return (
-    <div className="text-utils container">
+    <div className="text-utils container anim-fadeIn-03s">
       <h1> Typography </h1>
       <p>
         By default EaseCSS comes wth margin amd padding = 0, So that you can

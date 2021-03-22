@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className="card container">
+    <div className="card container anim-fadeIn-03s">
       <h1>Cards</h1>
 
       <p>Make amazing cards just by added few classes to you existing code</p>

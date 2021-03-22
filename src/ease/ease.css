@@ -50,7 +50,15 @@ t-center {
   width: 70%;
   margin: 0 auto;
 }
-
+.select-none
+{
+  user-select: none;
+}
+.pointer
+{
+  cursor: pointer;
+}
+.
 /* ----------------util----------------- */
 
 h1,
@@ -63,7 +71,7 @@ h6 {
   padding: 0;
 }
 p {
-  margin: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 /* **************background pre-defined************* */
@@ -108,6 +116,10 @@ p {
 }
 .f-orange {
   color: var(--orange);
+}
+.f-white
+{
+  color: var(--offwhite);
 }
 /* ****************avatars***********************/
 
@@ -1015,6 +1027,9 @@ p {
 /* -------------------------------------
   -------------Animations--------------
   ------------------------------------- */
+  .anim-fadeIn-03s {
+    animation: 1s forwards fadeIn;
+  }
 
 .anim-fadeIn-1s {
   animation: 1s forwards fadeIn;

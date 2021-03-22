@@ -4,7 +4,7 @@ import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const Image = () => {
   return (
-    <div className="images container">
+    <div className="images container anim-fadeIn-03s">
       <h1>Images</h1>
       <p>
         We know how important images are for your project, so we have added wide
