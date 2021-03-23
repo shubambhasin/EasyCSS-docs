@@ -7,6 +7,7 @@
   --blue: rgb(7, 114, 255);
   --offwhite: rgb(230, 230, 230);
   --notSoBlack: rgb(37, 37, 37);
+  --offGrey: rgb(231, 231, 231);
 }
 
 body {
@@ -50,12 +51,10 @@ t-center {
   width: 70%;
   margin: 0 auto;
 }
-.select-none
-{
+.select-none {
   user-select: none;
 }
-.pointer
-{
+.pointer {
   cursor: pointer;
 }
 .
@@ -117,8 +116,7 @@ p {
 .f-orange {
   color: var(--orange);
 }
-.f-white
-{
+.f-white {
   color: var(--offwhite);
 }
 /* ****************avatars***********************/
@@ -169,7 +167,6 @@ p {
 }
 
 .input-red {
-  
   transition: 0.3s;
 }
 .input-red:focus {
@@ -619,7 +616,51 @@ p {
   display: flex;
   flex-direction: column;
   border-radius: 0.25rem;
+  border: 1px solid var(--offGrey);
+  background: var(--offGrey);
+  gap: 1rem;
 }
+.no-list-pad {
+  padding-inline-start: 0px;
+}
+.no-style {
+  list-style-type: none;
+}
+.list-item:first-child {
+  margin-top: 0.5rem;
+}
+.list-item:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.list-item-gap {
+  list-style-type: none;
+  border: 1px solid rgb(190, 190, 190);
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+.list-item-gap:first-child {
+  margin-top: 0.5rem;
+}
+.list-item-gap:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.list-horizontal
+{
+  align-items: center;
+  background: var(--offGrey);
+  border: 1px solid var(--offGrey);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.list-item-h
+{
+  margin: 0.5rem 0;
+}
+/*
 .list-item {
   margin: 0.5rem;
   padding: 0.3rem 0.5rem;
@@ -645,6 +686,7 @@ p {
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
+*/
 
 /* ************ grids*************** */
 
@@ -1027,9 +1069,9 @@ p {
 /* -------------------------------------
   -------------Animations--------------
   ------------------------------------- */
-  .anim-fadeIn-03s {
-    animation: 1s forwards fadeIn;
-  }
+.anim-fadeIn-03s {
+  animation: 1s forwards fadeIn;
+}
 
 .anim-fadeIn-1s {
   animation: 1s forwards fadeIn;

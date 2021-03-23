@@ -9,6 +9,7 @@ import Card from "./components/library/Card";
 import Grid from "./components/library/Grid";
 import Image from "./components/library/Image";
 import Input from "./components/library/Input";
+import Lists from "./components/library/Lists";
 import Navigation from "./components/library/Navigation";
 import Ratings from "./components/library/Ratings";
 import TextUtils from "./components/library/TextUtils";
@@ -46,6 +47,7 @@ function App() {
           <Route path="/text-utilities" exact component={TextUtils}/>
           <Route path="/input" exact component={Input}/>
           <Route path="/simplified-grids" exact component={Grid}/>
+          <Route path="/lists" exact component={Lists}/>
 
         </Switch>
       </>
