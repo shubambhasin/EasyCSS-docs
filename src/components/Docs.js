@@ -13,12 +13,13 @@ margin: 0 auto;
 
 const Docs = () => {
 
-  const {sidebar, setSidebar} = useSidebar()
+  const {sidebar, setSidebar, brand,  setBrand} = useSidebar()
 
   useEffect(() => {
 
    setTimeout(() => {
-    setSidebar(!sidebar)
+    setSidebar(true)
+    setBrand(true)
    }, 500)
 
   }, [])
@@ -29,7 +30,7 @@ const Docs = () => {
  
 
   return (
-    <div className="docs-page">
+    <div className="docs-page anim-fadeIn-03s">
     
 
       <div className="docs-title">
