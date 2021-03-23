@@ -7,7 +7,7 @@
   --blue: rgb(7, 114, 255);
   --offwhite: rgb(230, 230, 230);
   --notSoBlack: rgb(37, 37, 37);
-  --offGrey: rgb(231, 231, 231);
+  --offGrey: rgb(224, 221, 221);
 }
 
 body {
@@ -37,6 +37,15 @@ input {
 }
 .no-border {
   border: none;
+}
+
+.max-content
+{
+  width: max-content;
+}
+.b1pxgrey
+{
+  border: 1px solid var(--offGrey);
 }
 
 t-center {
@@ -348,6 +357,36 @@ p {
   color: grey;
   border: 1px solid transparent;
 }
+/* ------------Badge--------------- */
+/* -------------------------------------- */
+
+.badge-container {
+  position: relative;
+  width: min-content;
+}
+.badge-container .circle {
+  border-radius: 50%;
+}
+.badge-circle-lg {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.badge-icon {
+  border-radius: 50%;
+  display: flex;
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  border: 2px solid white;
+}
+
+.icon-red {
+  background-color: var(--red);
+}
 
 /* **************icon button***************** */
 
@@ -646,8 +685,7 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.list-horizontal
-{
+.list-horizontal {
   align-items: center;
   background: var(--offGrey);
   border: 1px solid var(--offGrey);
@@ -656,8 +694,7 @@ p {
   flex-wrap: wrap;
   gap: 2rem;
 }
-.list-item-h
-{
+.list-item-h {
   margin: 0.5rem 0;
 }
 /*
@@ -771,6 +808,14 @@ p {
 }
 .flex-row {
   flex-direction: row;
+}
+.f-wrap
+{
+  flex-wrap: wrap;
+}
+.f-nowrap
+{
+  flex-wrap:nowrap;
 }
 
 /* -----------Height and width---------------- */

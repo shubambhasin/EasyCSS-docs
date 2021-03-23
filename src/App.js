@@ -4,6 +4,7 @@ import Docs from "./components/Docs";
 import { HomePage } from "./components/HomePage";
 import Alert from "./components/library/Alert";
 import Avatar from "./components/library/Avatar";
+import Badge from "./components/library/Badge";
 import { Buttons } from "./components/library/Buttons";
 import Card from "./components/library/Card";
 import Grid from "./components/library/Grid";
@@ -39,6 +40,7 @@ function App() {
           <Route path="/avatar" exact component={Avatar}/>
           <Route path="/alert" exact component={Alert}/>
           <Route path="/buttons" exact component={Buttons}/>
+          <Route path="/badge" exact component={Badge}/>
           <Route path="/card" exact component={Card}/>
           <Route path="/docs" exact component={Docs}/>
           <Route path="/navigation" exact component={Navigation}/>
