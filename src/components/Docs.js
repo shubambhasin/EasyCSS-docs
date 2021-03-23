@@ -1,15 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
+import { useSidebar } from "../context/sidebarContext";
 // import Sidebar from "./Sidebar";
 
+const DocsTitle = styled.span`
+font-size: 5rem;
+font-weight: lighter;
+text-align: center;
+width: 70%;
+margin: 0 auto;
+`;
+
 const Docs = () => {
-  const DocsTitle = styled.span`
-    font-size: 5rem;
-    font-weight: lighter;
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-  `;
+
+  const {sidebar, setSidebar} = useSidebar()
+
+  useEffect(() => {
+
+   setTimeout(() => {
+    setSidebar(!sidebar)
+   }, 500)
+
+  }, [])
+
+
+
+
+ 
+
   return (
     <div className="docs-page">
     

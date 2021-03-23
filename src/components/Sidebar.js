@@ -101,6 +101,7 @@ import * as FaIcons from "react-icons/fa";
 import { SidebarData } from "./SidebarData";
 import Submenu from "./Submenu";
 import { IconContext } from "react-icons/lib";
+import { useSidebar } from "../context/sidebarContext";
 const Nav = styled.div`
   background: black;
   height: 50px;
@@ -146,13 +147,13 @@ const SidebarWrap = styled.div`
 // const Brand = styled.span`
 //   text-align: center;
 // `;
+ 
 
 const Sidebar = () => {
-  const [sidebar, setSidebar] = useState(false);
+  const {sidebar, setSidebar} = useSidebar();
   const showSidebar = () => {
     setSidebar(!sidebar);
   };
-
   return (
     <>
       <IconContext.Provider value={{ color: "red" }}>
