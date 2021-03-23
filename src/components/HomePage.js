@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { useSidebar } from "../context/sidebarContext";
 
 export const HomePage = () => {
+
+  
+  const {setSidebar, setBrand} = useSidebar()
+
+  useEffect(() => {
+
+   
+    setSidebar(false)
+    setBrand(false)
+   
+
+  }, [])
+
   return (
     <div className="home-page">
       <div className="hero">
