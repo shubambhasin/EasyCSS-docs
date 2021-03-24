@@ -21,6 +21,7 @@ const Docs = () => {
     setTimeout(() => {
       setSidebar(true);
       setBrand(true);
+      console.log("open")
     }, 500);
   }, []);
 
@@ -33,7 +34,7 @@ const Docs = () => {
         <SyntaxHighlighter
           language="css"
           style={dracula}
-        >{`https://url.com/ease.css`}</SyntaxHighlighter>
+        >{`https://ease-css.netlify.app/ease/css/ease.css`}</SyntaxHighlighter>
         
         <h4 className="h4 mtb1-rem">
         Javascript file, import it in your JS directory
@@ -41,7 +42,7 @@ const Docs = () => {
         <SyntaxHighlighter
           language="javascript"
           style={dracula}
-        >{`https://url.com/ease.js`}</SyntaxHighlighter>
+        >{`https://ease-css.netlify.app/ease/js/ease.js`}</SyntaxHighlighter>
       </div>
     </div>
   );

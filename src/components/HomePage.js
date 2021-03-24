@@ -15,9 +15,9 @@ export const HomePage = () => {
   return (
     <div className="home-page">
       <div className="hero">
-        <div className="fork pointer">
+        <a href="https://github.com/shubambhasin/EasyCSS-docs" className="fork pointer">
           <FaStar size={14} /> Star on github
-        </div>
+        </a>
         <img class="mylogo" src={logo1} alt="logo" />
         <div>
           <HashLink to="/#why" className="secondary-button m-1">
@@ -33,7 +33,7 @@ export const HomePage = () => {
         </div>
       </div>
       <div id="why" className="why-css">
-        <h1>Why Section ! Hello go</h1>
+        <h3 className="h3">Why Section ! Hello go</h3>
       </div>
     </div>
   );

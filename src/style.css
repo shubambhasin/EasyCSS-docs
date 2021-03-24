@@ -85,6 +85,7 @@ h6 {
   align-items: center;
   justify-content: center;
   height: 100vh;
+
   gap: 2rem;
 }
 .hero h1 {
@@ -114,7 +115,7 @@ h6 {
   text-align: center;
   top: 0.7rem;
   right: 1rem;
-  color: whitesmoke;
+  color: #bf0c41;
   /* border: 1px solid var(--off-white); */
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -128,9 +129,9 @@ h6 {
 
 .primary-button {
   padding: 0.5rem 1rem;
-  border: 1px solid whitesmoke;
-  background-color: whitesmoke;
-  color: var(--black-accent);
+  border: 1px solid #bf0c41;
+  background-color: #bf0c41;
+  color: white;
   font-size: large;
   border-radius: 5px;
   font-weight: lighter;
@@ -138,11 +139,11 @@ h6 {
 
 .secondary-button {
   padding: 0.5rem 1rem;
-  border: 1px solid whitesmoke;
+  border: 1px solid #bf0c41;
   background-color: transparent;
   border-radius: 5px;
   font-size: large;
-  color: whitesmoke;
+  color: #bf0c41;
   font-weight: lighter;
 }
 
@@ -151,6 +152,7 @@ h6 {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  color: #bf0c41;
 }
 
 /* ------------------docs section----------- */
@@ -432,5 +434,21 @@ h6 {
   .container
   {
     width: 90%;
+  }
+}
+@media screen and (max-width: 450px)
+{
+  .why-css
+  {
+    font-size: small;
+  }
+  .docs-title
+  {
+    font-size: small;
+  }
+  .home-page .hero 
+  {
+    font-size: small;
+
   }
 }
