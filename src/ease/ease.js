@@ -1,5 +1,8 @@
 // ---------------toasts------------
 
+const openModal = document.querySelector(".modal-open");
+const modalBody = document.querySelector(".modal-container");
+const modalClose = document.querySelector(".modal-close");
 const toastContainer = document.querySelector(".toast-container");
 const toastGreen = document.querySelector(".toast-green");
 const toastRed = document.querySelector(".toast-red");
@@ -106,3 +109,15 @@ blackToastClose.addEventListener('click', function(){
     console.log("black close")
     toastBlack.style.display = "none"
 })
+
+
+
+// ---------------MOdal-----------------
+
+openModal.addEventListener("click", function () {
+  modalBody.style.display = "block";
+});
+
+modalClose.addEventListener("click", function () {
+  modalBody.style.display = "none";
+});

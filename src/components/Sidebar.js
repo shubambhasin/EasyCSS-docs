@@ -6,7 +6,7 @@ import { SidebarData } from "./SidebarData";
 import Submenu from "./Submenu";
 import { IconContext } from "react-icons/lib";
 import { useSidebar } from "../context/sidebarContext";
-import tabicon from './images/tabicon.jpg'
+import tabicon from "./images/tabicon.jpg";
 
 const Nav = styled.div`
   background: black;
@@ -27,7 +27,6 @@ const NavIcon = styled(Link)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  
 `;
 
 const SidebarNav = styled.nav`
@@ -54,17 +53,7 @@ const SidebarWrap = styled.div`
 const Brand = styled.div`
   // text-align: center;
   color: white;
-  display: ${({brand}) => (brand === true ? "flex" : "none")};
-  justify-content: flex-end;
-  align-items: center;
-  height: 50px;
-  width: 100%;
-  margin-right: 2rem;
-`;
-
-const Star = styled.div`
-  color: white;
-  display: ${({star}) => (star === true ? "flex" : "none")};
+  display: ${({ brand }) => (brand === true ? "flex" : "none")};
   justify-content: flex-end;
   align-items: center;
   height: 50px;
@@ -74,11 +63,10 @@ const Star = styled.div`
 
 const Sidebar = () => {
   const { sidebar, setSidebar, brand, star, setBrand } = useSidebar();
-  
+
   const showSidebar = () => {
     setSidebar(!sidebar);
   };
-
 
   return (
     <>
@@ -88,10 +76,7 @@ const Sidebar = () => {
             <FaIcons.FaBars onClick={showSidebar} size={28} />
           </NavIcon>
           <Brand brand={brand}>
-          <Star star={star} className="fork pointer">
-          <FaIcons.FaStar size={14} /> Star on github
-        </Star >
-            <img src={tabicon} className="tablogo" alt="logo"/> 
+            <img src={tabicon} className="tablogo" alt="logo" />
             <h4 className="h4">EaseCSS</h4>
           </Brand>
         </Nav>

@@ -101,7 +101,7 @@ h6 {
 .docs-title {
   display: grid;
   place-items: center;
-  height: 80vh;
+  height: 30vh;
   margin-left: 7rem;
 }
 
@@ -112,13 +112,14 @@ h6 {
   position: absolute;
   gap: 0.5rem;
   text-align: center;
-  top: 0rem;
+  top: 0.7rem;
   right: 1rem;
   color: whitesmoke;
   /* border: 1px solid var(--off-white); */
   padding: 0.5rem 1rem;
   border-radius: 5px;
   overflow: hidden;
+  z-index: 20000000000000;
 }
 
 .m-1 {
@@ -407,6 +408,23 @@ h6 {
 {
   border-radius: 50%;
 }
+
+.modal-body-1
+{
+  z-index: -1;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  position: relative;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 40%;
+  max-width: 60%;
+  margin: auto;
+  animation-name: topToBottom;
+  animation-duration: 0.4s;
+  top: 0rem;
+}
+
+
 
 
 @media screen and (max-width: 768px)
