@@ -13,13 +13,15 @@ margin: 0 auto;
 
 const Docs = () => {
 
-  const {sidebar, setSidebar, brand,  setBrand} = useSidebar()
+  const {sidebar, setSidebar, brand,  setBrand, setStar} = useSidebar()
 
   useEffect(() => {
 
    setTimeout(() => {
     setSidebar(true)
     setBrand(true)
+    setStar(false)
+    
    }, 500)
 
   }, [])

@@ -112,10 +112,10 @@ h6 {
   position: absolute;
   gap: 0.5rem;
   text-align: center;
-  top: 4rem;
+  top: 0rem;
   right: 1rem;
   color: whitesmoke;
-  border: 1px solid var(--off-white);
+  /* border: 1px solid var(--off-white); */
   padding: 0.5rem 1rem;
   border-radius: 5px;
   overflow: hidden;
@@ -384,8 +384,16 @@ h6 {
 
   width: 400px;
   padding: 1rem 0;
+}
 
-
+.mylogo
+{
+  width: 400px;
+}
+.tablogo
+{
+  width: 35px;
+  margin-right: 5px;
 }
 /* -----------images--------------- */
 
