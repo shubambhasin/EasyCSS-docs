@@ -425,7 +425,10 @@ h6 {
   animation-duration: 0.4s;
   top: 0rem;
 }
-
+.flex-col
+{
+  flex-direction: column;
+}
 
 
 

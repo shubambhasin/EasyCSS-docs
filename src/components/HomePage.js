@@ -32,8 +32,11 @@ export const HomePage = () => {
           </Link>
         </div>
       </div>
-      <div id="why" className="why-css">
-        <h3 className="h3">Why Section ! Hello go</h3>
+      <div id="why" className="why-css flex-col container">
+        <h3 className="h3  mtb1-rem">Why Section ! Hello go</h3>
+
+        <p>The biggest problem that people face while suing CSS libraries is with keeping in mind the classnames, so we simplified it. e.g., if you need a red background, just write the class<code>.bg-red</code> and it will make the background of that element red irrespective of what it is.</p>
+        <p>Naming of classes has been done carefully. So that keeping in mind the class names do not come as a new and hard task. Once you start using it. It will start coming to you naturally. 😊</p>
       </div>
     </div>
   );
